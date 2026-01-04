@@ -48,12 +48,12 @@ h4 {
 }
 
 nav ul {
+    display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     text-indent: 0px;
     padding-left: 0px;
     margin-left: 0px;
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
     padding: 1em;
     margin-bottom: 0px;
