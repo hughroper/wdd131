@@ -92,8 +92,7 @@ main section:nth-child(3) {
 
 }
 
-main section h2,
-main section h3 {
+main section h2 {
     background-color: #004190;
     margin-top: 0px;
     border-radius: 0.5rem 0.5rem 0 0;
@@ -111,7 +110,7 @@ main section p {
     color: #555555;
 }
 
-main section h4 {
+main section h3 {
     margin: 32px 64px 32px 64px;
     text-align: center;
     font-size: 1.2rem;
