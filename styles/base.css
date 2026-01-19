@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    color: #fff;
 }
 
 body a {
@@ -38,6 +39,7 @@ header nav {
     height: 60px;
     background-color: #333333;
     margin-bottom: 0px;
+    color: #fff;
 }
 
 header nav a {
