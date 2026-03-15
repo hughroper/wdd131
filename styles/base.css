@@ -74,7 +74,8 @@ main section:nth-of-type(2) {
 }
 
 main section:nth-of-type(2) ul {
-    align-self: center;
+    align-self: start;
+    margin-top: 0;
 }
 
 main h1 {
