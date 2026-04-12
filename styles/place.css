@@ -1,6 +1,147 @@
+:root {
+    --primary-color: #006a4e;
+    --secondary-color: #da291c;
+    --accent-color: #ffffff;
+    --heading-font: "Source Sans 3", sans-serif;
+}
+
 body {
     font-family: "Source Sans 3", sans-serif;
     font-weight: 400;
     box-sizing: border-box;
-    /* background-color: #ccc; */
+    margin: 0;
+}
+
+/* Mobile */
+
+main {
+    /* max-width: 900px; */
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 20px solid var(--secondary-color);
+}
+
+.hero {
+    width: 100%;
+    border-bottom: 8px solid var(--secondary-color);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section.data { 
+}
+
+section {
+    font-size: 1.25rem;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+table {
+    margin: 0 auto;
+}
+
+th {
+    text-align: right;
+}
+
+td {
+    text-align: left;
+}
+
+.weather-icon {
+    width: 50px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+        position: relative;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .data {
+        grid-column: 1 / 2;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        background-color: rgba(255, 255, 255, 0.85);
+        position: absolute;
+        z-index: 10;
+    }
+
+    .weather {
+        grid-column: 3 / 4;
+        margin-top: 30%;
+        margin-right: 2rem;
+        background-color: rgba(255, 255, 255, 0.85);
+        position: absolute;
+        right: 0;
+        z-index: 10;
+    }
+
+    section h2 {
+        background-color: rgb(218, 41, 28, 0.85);
+        text-align: left;
+        padding: 1rem;
+        position: relative;
+        top: -2rem;
+        left: -3rem;
+        margin-bottom: 0;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 2.5rem;
+        margin-left: 0.5rem;
+    }
+
+    footer {
+        margin-top: 0;
+        padding-bottom: 4rem;
+    }
+
+
+
+
 }

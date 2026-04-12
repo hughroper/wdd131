@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place</title>
-    <link ref="stylesheet" href="styles/place.css">
+    <title>Bangladesh</title>
+    <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
-    <meta name="description" content="">
+    <meta name="description" content="Life in Bangladesh">
     <meta name="author" content="Hugh Roper"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,106 +16,74 @@
 <body>
     
     <header>
-        <h1>Place Title</h1>
+        <h1>Bangladesh</h1>
     </header>
                 
     <main>
 
-        <div> 
-            <img src="" alt="">
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 440px)" srcset="images/bangladesh-mobile.webp">
+                <source media="(min-width: 441px)" srcset="images/bangladesh-hero.webp">
+                <img src="images/bangladesh-hero.webp" alt="Landscape view of Bangladesh">
+            </picture>
         </div>
 
-        <section>
+        <section class="data">
             <h2>Data</h2>
             <table>
                 <tbody>
                     <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
+                        <th>Area:</th>
+                        <td>57,320 sq mi</td>
                     </tr>
                     <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
+                        <th>Population:</th>
+                        <td>173,000,000</td>
                     </tr>
                     <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
+                        <th>Capital:</th>
+                        <td>Dhaka</td>
                     </tr>
                     <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
+                        <th>Languages:</th>
+                        <td>Bengali (official)</td>
                     </tr>
                     <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
+                        <th>Currency:</th>
+                        <td>Bangladeshi Taka</td>
                     </tr>
                     <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
+                        <th>Time Zone:</th>
+                        <td>UTC+6</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-                <section>
-            <h2>Data</h2>
+        <section class="weather">
+ 
+            <h2>Weather</h2>
+ 
+            <img src="images/clouds.svg" alt="Weather icon" class="weather-icon">
+
             <table>
                 <tbody>
                     <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
+                        <th>Temperature:</th>
+                        <td><span id="temperature">30</span> °C</td>
                     </tr>
                     <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
+                        <th>Conditions:</th>
+                        <td>Partly Cloudy</td>
                     </tr>
                     <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
+                        <th>Wind Speed:</th>
+                        <td><span id="windSpeed">10</span> km/h</td>
                     </tr>
                     <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
-                    </tr>
-                    <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
-                    </tr>
-                    <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section>
- 
-            <h2>Weater</h2>
- 
-            <img src="images/clouds.svg" alt="Weather icon">
-
-<picture>
-    <source media="(max-width: 440px)" srcset="images/bangladesh-mobile.webp">
-    <img src="images/bangladesh-hero.webp" alt="Bangladesh" loading="lazy">
-</picture>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
-                    </tr>
-                    <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
-                    </tr>
-                    <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
-                    </tr>
-                    <tr>
-                        <td>Label:</td>
-                        <td>Value</td>
+                        <th>Wind Chill:</th>
+                        <td><span id="windChill"></span></td>
                     </tr>
                 </tbody>
             </table>
@@ -128,7 +96,7 @@
     
         <p>© <span id="currentYear"></span> <span class="separator">🌶️</span> Hugh Roper <span class="separator">🌶️</span>
             New Mexico</p>
-        <p>Last Modified: <span id="lastModified">01/19/2026 13:09:53</span></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     
     </footer>
 
