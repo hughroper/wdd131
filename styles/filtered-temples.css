@@ -116,11 +116,6 @@ section.gallery section p {
     font-size: 1rem;
 }
 
-section.gallery section p {
-    margin: 0;
-    font-size: 1rem;
-}
-
 section.gallery section p .label {
     font-variant: small-caps;
     font-size: 1.25rem;
