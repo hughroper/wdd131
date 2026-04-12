@@ -107,8 +107,7 @@ section.gallery section h3 {
     padding-bottom: 1rem;
 }
 
-section.gallery section h3,
-section.gallery section p {
+section.gallery section h3 {
     margin: 0;
 }
 
