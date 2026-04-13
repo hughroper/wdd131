@@ -1,0 +1,12 @@
+body {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    /* background-color: #ccc; */
+}
+
+img {
+    border: 1px solid #666;
+    width: 400px;
+    display: block;
+}
