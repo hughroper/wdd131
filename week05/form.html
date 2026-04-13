@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5 Form Assignment</title>
+    <meta name="description" content="Week 5 Form Assignment - Product Review Form - WDD131" />
+    <meta name="author" content="Hugh Roper" />
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+
+        <h1>Product Review</h1>
+        
+    </header>
+
+    <main>
+
+        <form class="product" method="get" action="review.html">
+
+            <fieldset class="product-name">
+                <label>Product Name <select id="product-name" name="productName" required>
+                    <option value="" disabled selected>Select a Product… &nbsp; ⏷ </option>
+                </select></label>
+            </fieldset>
+
+            <fieldset class="overall-rating">
+                <div class="rating">Overall Rating </div>
+                <label><input type="radio" name="overallRating" value="1">★ </label>
+                <label><input type="radio" name="overallRating" value="2">★★ </label>
+                <label><input type="radio" name="overallRating" value="3">★★★ </label>
+                <label><input type="radio" name="overallRating" value="4">★★★★ </label>
+                <label><input type="radio" name="overallRating" value="5">★★★★★ </label>
+            </fieldset>
+            
+            <fieldset class="date-installation">
+                <label>Date of Installation <input type="date" id="date-of-installation" name="dateOfInstallation" required></label>
+            </fieldset>
+            
+            <fieldset class="product-features">
+                <div class="features">Which features did you find useful in the product?
+                <span>(Check all that apply)</span></div>
+                <label><input type="checkbox" id="durability" name="features"> Durability</label>
+                <label><input type="checkbox" id="ease-of-use" name="features"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="features"> Performance</label>
+                <label><input type="checkbox" id="design" name="features"> Design</label>
+            </fieldset>
+            
+            <fieldset class="review">
+                <label>Written Review <span>(Optional)</span>
+                <textarea id="written-review" name="writtenReview"></textarea></label>
+            </fieldset>
+            
+            <fieldset class="user-name">
+                <label>Your Name <span>(Optional)</span> <input type="text" id="name" name="name"></label>
+            </fieldset>
+            
+            <fieldset class="submit">
+                <input type="submit" value="Post Review">
+            </fieldset>
+            
+
+
+        </form>
+
+    </main>
+
+    <footer>
+    
+        <p>© <span id="currentYear"></span> <span class="separator">🌶️</span> Hugh Roper <span class="separator">🌶️</span>
+            New Mexico</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    
+    </footer>
+
+
+
+</body>
+</html>
