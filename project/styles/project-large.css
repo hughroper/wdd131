@@ -4,5 +4,29 @@
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    /* keep intro full width */
+    section>h2,
+    section>p {
+        grid-column: 1 / -1;
+    }
+
+    /* grid items behave nicely */
+    .grid-item {
+        margin: 0;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
 }
 

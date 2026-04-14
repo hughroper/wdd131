@@ -99,7 +99,11 @@ function updateFields() {
             typeInput.value = vegetables[i].type;
         }
     }
+
 }
 
 vegetableSelect.addEventListener("change", updateFields);
 squareFeetInput.addEventListener("input", updateFields);
+
+
+
