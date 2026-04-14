@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Yield Calculator</title>
+    <meta name="description" content="Garden Yield Planner – Helping gardeners plan a bountiful harvest.">
+    <meta name="author" content="Hugh Roper">
+    <link href="styles/project.css" rel="stylesheet">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Garden Yield Calculator</h1>
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Helping gardeners plan a bountiful harvest</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum iusto perferendis natus molestias velit obcaecati distinctio quae ducimus in omnis, repellat corrupti cupiditate voluptatem eaque aut nemo! Pariatur, animi.</p>
+
+        </section>
+
+        <form class="calc" method="get" action="">
+
+            <fieldset class="selector">
+                <label for="vegetable">Select a vegetable…
+                    <select id="vegetable" name="vegetable" required>
+                        <option value="" disabled selected>Choose a plant…</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset class="info">
+                <label for="square-feet">Square feet
+                    <input type="number" id="square-feet" name="squareFeet" min="1" placeholder="1" required>
+                </label>
+
+                <label for="seeds">Seeds needed
+                    <input type="text" id="seeds" name="seeds" readonly>
+                </label>
+
+                <label for="method">Storage method
+                    <input type="text" id="method" name="method" readonly>
+                </label>
+
+                <label for="yield">Yield
+                    <input type="text" id="yield" name="yield" readonly>
+                </label>
+
+                <label for="type">Storage type
+                    <input type="text" id="type" name="type" readonly>
+                </label>
+            </fieldset>
+
+
+        </form>
+
+    </main>
+
+    <footer>
+        <h3>footer</h3>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #F50122;
+    --secondary-color: #00662E;
+    --accent-color: #fbecd9;
+    --text-color: #333;
+    --heading-font: "Source Sans 3", sans-serif;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 400px;
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2rem;
+}
+
+main {
+    width: 400px;
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+}
+
+main h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.1em;
+}
+
+main p {
+    color: #fff;
+}
+
+form.calc {
+    background-color: var(--accent-color);
+    padding: 1rem;
+}
+
+.calc fieldset {
+    padding: 0;
+    border: none;
+}
+
+.calc label {
+    display: block;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.calc select,
+.calc input {
+    display: block;
+    width: 100%;
+    /* max-width: 360px; */
+    background-color: #fff;
+    display: block;
+    border: solid 1px #ccc;
+    border-radius: 0px;
+    padding: 1.5rem;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    appearance: none;
+    margin-bottom: 1rem;
+    margin-top: 0.25rem;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: var(--text-color);
+    color: var(--accent-color);
+    width: 400px;
+    padding: 1.5rem;
+}
