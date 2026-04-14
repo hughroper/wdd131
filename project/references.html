@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Yield Calculator</title>
+    <meta name="description" content="Garden Yield Planner – Helping gardeners plan a bountiful harvest.">
+    <meta name="author" content="Hugh Roper">
+    <link href="styles/project.css" rel="stylesheet">
+    <link href="styles/project-large.css" rel="stylesheet">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="home">
+
+    <header>
+        <h1>References</h1>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li class="home"><a href="index.html">Home</a></li>
+            <li><a href="grids.html">Grids</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h2>Data Source</h2>
+
+            <p>Planting data based on personal GESCI110 course project (<a href="images/sustaining-life-project">Garden Planning PDF</a>).</p>
+
+            <ul>
+                <li><a href="https://yardandgarden.extension.iastate.edu/how-to/vegetable-harvest-guide">Iowa State University Vegetable Harvest Guide</a></li>
+                <li>Seed catalogs from companies like <a href="https://www.johnnyseeds.com">Johnny’s</a> seeds and <a href="https://www.burpee.com/">Burpee</a>.</a></li>
+                <li><a href="https://www.almanac.com/gardening/growing-guides">The Famers Almanac Growing Guides</a></li>
+           </ul>
+
+            <h2>Image Source</h2>
+
+            <p>Photo by <a href="https://unsplash.com/@mk__s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">mk.
+                s</a> licensed for free from <a
+                href="https://unsplash.com/photos/a-variety-of-vegetables-are-displayed-in-wooden-crates-tHHFiw6GNEU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+
+        </section>
+
+    </main>
+
+    <picture>
+        <source media="(max-width: 768px)" srcset="images/veggies-small.webp">
+        <source media="(min-width: 769px)" srcset="images/veggies-large.webp">
+        <img src="images/veggies-large.webp" alt="Vegetables in wooden crates" loading="lazy">
+    </picture>
+
+    <footer>
+        <p>© <span id="currentYear"></span> 🌶️ Hugh Roper 🌶️ New Mexico 🌶️ <a href="references.html">References</a>
+        </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

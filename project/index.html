@@ -23,8 +23,8 @@
     <nav>
         <ul class="navigation">
             <li class="home"><a href="index.html">Home</a></li>
-            <li><a href="">Planner</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="grids.html">Grids</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
 
@@ -84,11 +84,15 @@
 
     </main>
 
-    <footer>
-        <p>© <span id="currentYear"></span> <span class="separator">🌶️</span> Hugh Roper <span class="separator">🌶️</span>
-            New Mexico</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
+    <picture>
+        <source media="(max-width: 768px)" srcset="images/veggies-small.webp">
+        <source media="(min-width: 769px)" srcset="images/veggies-large.webp">
+        <img src="images/veggies-large.webp" alt="Vegetables in wooden crates" loading="lazy">
+    </picture>
 
+    <footer>
+        <p>© <span id="currentYear"></span> 🌶️ Hugh Roper 🌶️ New Mexico 🌶️ <a href="references.html">References</a></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
     
 </body>
